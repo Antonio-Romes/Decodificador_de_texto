@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main class="main">
+
+        <header>
+            <h1>Decodificador de Texto</h1>
+        </header>
+        <section class="decodificador__box">
+            
+            <section class="codificador-mensagem">
+                <textarea id="escreverMensagem"> 
+                </textarea>
+                <div class="botao__box">
+                    <input type="button" class="botao"  value="Codificar"  onclick="codificar()"/>
+                    <input type="button" class="botao" value="DeCodificar"  onclick="decodificar()" />
+                </div> 
+            </section>
+            <div class="box-icon">
+                <span>
+                    => <br>
+                    <=
+                </span>
+            </div>
+            <section class="mensagem-decodificada">
+                <textarea id="mensagemDecodifica"   >
+                   
+                </textarea>
+                <div class="botao__box">
+                    <input type="button" class="botao" value="Copiar"  onclick="copiarTextArea('mensagem  De codifica')"/>
+                </div>
+        
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        rodape
+    </footer>
+        
+        
+
+        
+            
+            
+     <script src="assets/js/main.js"></script>
+</body>
+</html>
