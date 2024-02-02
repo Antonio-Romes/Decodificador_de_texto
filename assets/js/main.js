@@ -94,10 +94,11 @@ const copiarTextArea = () =>{
     let elemento = document.getElementById("mensagemDecodifica");
     document.getElementById('apresentaBox').style.display = 'block';
     document.getElementById('mensagemDecodifica').style.display = 'none'; 
-    document.getElementById('escreverMensagem').value = "";
+    
 
     if(!ehMensagemVazia(elemento.value))
     {
+        document.getElementById('escreverMensagem').value = "";
         navigator.clipboard.writeText(elemento.value)
         .then(() => {
         console.log('Texto copiado!');
